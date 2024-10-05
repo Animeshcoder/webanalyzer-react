@@ -1,113 +1,86 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import Footer1 from '../components/footer1';
-import './user-dashboard.css';
+import React from "react";
+import { Helmet } from "react-helmet";
+import Footer1 from "../components/footer1";
+import "./user-dashboard.css";
 
-const UserDashboard = (props) => {
+const UserDashboard = () => {
   return (
-    <div className="user-dashboard-container">
-      <Helmet>
-        <title>exported project</title>
-      </Helmet>
-      <div className="user-dashboard-user-dashboard">
-        <span className="user-dashboard-text10">
-          <span>Overview</span>
-        </span>
-        <span className="user-dashboard-text12">
-          <span>Loreum Ipusm</span>
-        </span>
-        <span className="user-dashboard-text14">
-          <span>
-            Lorem ipsum dolor sit amet.
-            <span dangerouslySetInnerHTML={{ __html: ' ' }} />
-          </span>
-          <br />
-          <span>Metus eget integer aliquam</span>
-          <br />
-          <span></span>
-        </span>
-        <span className="user-dashboard-text20">
-          <span>150</span>
-        </span>
-        <span className="user-dashboard-text22">
-          <span className="user-dashboard-text23">Your Application has</span>
-          <span>
-            {' '}
-            accept
-            <span dangerouslySetInnerHTML={{ __html: ' ' }} />
-          </span>
-          <br />
-          <span>3 Companies</span>
-        </span>
-        <span className="user-dashboard-text27">Loreum Ipusm</span>
-        <span className="user-dashboard-text28">
-          <span>Loreum Ipusm</span>
-        </span>
-        <span className="user-dashboard-text30">
-          <span>Loreum Ipusm</span>
-        </span>
-        <span className="user-dashboard-text32">
-          <span>Lorem ipsum dolor sit amet.</span>
-          <br />
-          <span></span>
-        </span>
-        <span className="user-dashboard-text36">
-          <span>56</span>
-        </span>
-        <span className="user-dashboard-text38">
-          <span>Application sent</span>
-        </span>
-        <div className="user-dashboard-group1"></div>
-        <span className="user-dashboard-text40">
-          <span>10</span>
-        </span>
-        <span className="user-dashboard-text42">
-          <span>Interview Schedule</span>
-        </span>
-        <span className="user-dashboard-text44">
-          <span>Profile Visited</span>
-        </span>
-        <span className="user-dashboard-text46">
-          <span>Last Activites</span>
-        </span>
-        <span className="user-dashboard-text48">
-          <span className="user-dashboard-text49">Your Application has</span>
-          <span>
-            {' '}
-            accept
-            <span dangerouslySetInnerHTML={{ __html: ' ' }} />
-          </span>
-          <br />
-          <span>3 Companies</span>
-        </span>
-        <span className="user-dashboard-text53">
-          <span>UI/UX DESIGNER</span>
-        </span>
-        <span className="user-dashboard-text55">
-          <span>Natayla Herington</span>
-        </span>
-        <span className="user-dashboard-text57">
-          <span className="user-dashboard-text58">Your</span>
-          <span>
-            {' '}
-            accept
-            <span dangerouslySetInnerHTML={{ __html: ' ' }} />
-          </span>
-          <br />
-          <span>3 Companies</span>
-        </span>
-        <span className="user-dashboard-text62">
-          <span className="user-dashboard-text63">Your</span>
-          <span>
-            {' '}
-            accept
-            <span dangerouslySetInnerHTML={{ __html: ' ' }} />
-          </span>
-          <br />
-          <span>3 Companies</span>
-        </span>
+    <div className="dashboard-container">
+      <div className="overview-title">
+        <h2>Overview</h2>
+        <div className="underline"></div>
       </div>
-      <Footer1 />
+
+      <div className="dashboard-content">
+        {/* Left Section */}
+        <div className="left-section">
+          <h3>Lorem Ipsum</h3>
+          <div className="tabs">
+            <span>Lorem Ipsum</span>
+            <span>Lorem Ipsum</span>
+            <span>Lorem Ipsum</span>
+            <span>Lorem Ipsum</span>
+          </div>
+          <div className="description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit You've
+              sent 56 job applications this month. Keep up the momentum by
+              following up on your pending applications and preparing for
+              interviews. Don't forget to tailor your resume for each role.
+              You've sent 56 job applications this month. Keep up the momentum
+              by following up on your pending applications and preparing for
+              interviews. Don't forget to tailor your resume for each role.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit You've
+              sent 56 job applications this month. Keep up the momentum by
+              following up on your pending applications and preparing for
+              interviews. Don't forget to tailor your resume for each role.
+              You've sent 56 job applications this month. Keep up the momentum
+              by following up on your pending applications and preparing for
+              interviews. Don't forget to tailor your resume for each role.
+              You've sent 56 job applications this month. Keep up the momentum
+              by following up on your pending applications and preparing for
+              interviews. Don't forget to tailor your resume for each role.
+            </p>
+          </div>
+          <div className="stats">
+            <div className="stat-box purple-box">
+              <h3>56</h3>
+              <p>Application sent</p>
+            </div>
+            <div className="stat-box">
+              <h3>10</h3>
+              <p>Interview Schedule</p>
+            </div>
+            <div className="stat-box">
+              <h3>150</h3>
+              <p>Profile Visited</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Section */}
+        <div className="right-section">
+          <div className="user-info">
+            <div className="avatar-placeholder"></div>
+            <h3>Natayla Herington</h3>
+            <p>UI/UX Designer</p>
+          </div>
+          <div className="activities">
+            <h4>Last Activities</h4>
+            <div className="activity-box">
+              <p>Your Application has accepted 3 Companies</p>
+            </div>
+            <div className="activity-box">
+              <p>Your Application has accepted 3 Companies</p>
+            </div>
+            <div className="activity-box">
+              <p>Your Application has accepted 3 Companies</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

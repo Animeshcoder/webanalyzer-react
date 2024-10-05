@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-import './features21.css'
+import "./features21.css";
 
 const Features21 = (props) => {
   return (
@@ -30,6 +30,7 @@ const Features21 = (props) => {
             <div className="features21-feature2 thq-flex-column">
               <img
                 alt={props.feature2ImageAlt}
+                src="https://play.teleporthq.io/static/svg/default-img.svg"
                 className="thq-team-image-round"
               />
               <div className="thq-flex-column">
@@ -55,6 +56,7 @@ const Features21 = (props) => {
             <div className="features21-feature4 thq-flex-column">
               <img
                 alt={props.feature4ImageAlt}
+                src="https://play.teleporthq.io/static/svg/default-img.svg"
                 className="thq-team-image-round"
               />
               <div className="thq-flex-column">
@@ -81,39 +83,39 @@ const Features21 = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 Features21.defaultProps = {
   feature1Description:
-    'Enhance user experience with visually appealing and intuitive design elements.',
-  feature4Title: 'Expert Assistance',
+    "Enhance user experience with visually appealing and intuitive design elements.",
+  feature4Title: "Expert Assistance",
   feature4Description:
-    'Get guidance and support from our team of experienced professionals.',
-  feature1ImageAlt: 'UI/UX Design Image',
+    "Get guidance and support from our team of experienced professionals.",
+  feature1ImageAlt: "UI/UX Design Image",
   feature5Description:
-    'Receive credits to kickstart your online advertising campaigns and reach a wider audience.',
+    "Receive credits to kickstart your online advertising campaigns and reach a wider audience.",
   sectionDescription:
-    'Explore the features that set us apart and help elevate your website performance.',
-  mainAction: 'Choose Your Plan',
+    "Explore the features that set us apart and help elevate your website performance.",
+  mainAction: "Choose Your Plan",
   feature2Description:
-    'Protect your website and user data with robust security measures.',
+    "Protect your website and user data with robust security measures.",
   feature3Description:
-    'Improve search engine visibility and drive organic traffic to your website.',
-  feature4ImageAlt: 'Expert Assistance Image',
-  feature2ImageAlt: 'Security Solutions Image',
-  feature5ImageAlt: 'Google AdWords Credits Image',
-  sectionTitle: 'Key Features',
-  feature5Title: 'Google AdWords Credits',
+    "Improve search engine visibility and drive organic traffic to your website.",
+  feature4ImageAlt: "Expert Assistance Image",
+  feature2ImageAlt: "Security Solutions Image",
+  feature5ImageAlt: "Google AdWords Credits Image",
+  sectionTitle: "Key Features",
+  feature5Title: "Google AdWords Credits",
   feature2ImageSrc:
-    'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMTMyMDIwN3w&ixlib=rb-4.0.3&q=80&w=1080',
-  feature3Title: 'SEO Strategies',
-  feature3ImageAlt: 'SEO Strategies Image',
+    "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMTMyMDIwN3w&ixlib=rb-4.0.3&q=80&w=1080",
+  feature3Title: "SEO Strategies",
+  feature3ImageAlt: "SEO Strategies Image",
   feature4ImageSrc:
-    'https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMTMyMDIwNnw&ixlib=rb-4.0.3&q=80&w=1080',
-  feature2Title: 'Security Solutions',
-  feature1Title: 'UI/UX Design',
-}
+    "https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMTMyMDIwNnw&ixlib=rb-4.0.3&q=80&w=1080",
+  feature2Title: "Security Solutions",
+  feature1Title: "UI/UX Design",
+};
 
 Features21.propTypes = {
   feature1Description: PropTypes.string,
@@ -136,6 +138,6 @@ Features21.propTypes = {
   feature4ImageSrc: PropTypes.string,
   feature2Title: PropTypes.string,
   feature1Title: PropTypes.string,
-}
+};
 
-export default Features21
+export default Features21;

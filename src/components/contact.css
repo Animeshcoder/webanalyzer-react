@@ -1,144 +1,142 @@
-.contact-contact20 {
+/* General Layout */
+.contact-container {
   display: flex;
-  overflow: hidden;
-  position: relative;
+  justify-content: center;
   align-items: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
   flex-direction: column;
+  width: 100%;
 }
+
 .contact-max-width {
-  gap: var(--dl-space-space-twounits);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
 }
+
 .contact-section-title {
-  gap: var(--dl-space-space-unit);
-  width: auto;
-  display: flex;
-  max-width: 800px;
-  align-items: center;
-  flex-shrink: 0;
-  flex-direction: column;
+  text-align: center;
+  padding: 30px 20px;
 }
-.contact-content1 {
-  gap: var(--dl-space-space-oneandhalfunits);
-  display: flex;
-  align-self: stretch;
-  align-items: center;
-  flex-direction: column;
+
+.contact-heading {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
-.contact-text3 {
+
+.contact-subheading {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.6;
   text-align: center;
 }
+
 .contact-row {
-  gap: var(--dl-space-space-threeunits);
   display: flex;
-  align-self: stretch;
-  align-items: flex-start;
+  justify-content: center; /* Center boxes in the row */
+  padding: 50px 0;
+  gap: 40px;
+  flex-wrap: wrap;
 }
-.contact-content2 {
-  gap: var(--dl-space-space-oneandhalfunits);
-  flex: 1;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.contact-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }
-.contact-contact-info1 {
-  gap: var(--dl-space-space-oneandhalfunits);
-  display: flex;
-  align-self: stretch;
-  align-items: center;
-  flex-direction: column;
-}
-.contact-content3 {
-  gap: var(--dl-space-space-unit);
-  display: flex;
-  align-self: stretch;
-  align-items: stretch;
-  flex-direction: column;
-}
-.contact-text4 {
-  align-self: stretch;
-  text-align: center;
-}
-.contact-text5 {
-  text-align: center;
-}
-.contact-email {
-  text-align: center;
-}
-.contact-content4 {
-  gap: var(--dl-space-space-oneandhalfunits);
-  flex: 1;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.contact-contact-info2 {
-  gap: var(--dl-space-space-oneandhalfunits);
-  display: flex;
-  align-self: stretch;
-  align-items: center;
-  flex-direction: column;
-}
-.contact-content5 {
-  gap: var(--dl-space-space-unit);
-  display: flex;
-  align-self: stretch;
-  align-items: stretch;
-  flex-direction: column;
-}
-.contact-text6 {
-  align-self: stretch;
-  text-align: center;
-}
-.contact-text7 {
-  text-align: center;
-}
-.contact-phone {
-  text-align: center;
-}
-.contact-content6 {
-  gap: var(--dl-space-space-oneandhalfunits);
-  flex: 1;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
+
+/* Ensure icons and content are centered */
+.contact-contact-info1,
+.contact-contact-info2,
 .contact-contact-info3 {
-  gap: var(--dl-space-space-oneandhalfunits);
   display: flex;
-  align-self: stretch;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.contact-content7 {
-  gap: var(--dl-space-space-unit);
+
+.contact-info-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.contact-info-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-box {
+  flex: 1;
+  max-width: 300px;
+  text-align: center; /* Center text and icons */
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
-  align-self: stretch;
-  align-items: stretch;
   flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
 }
-.contact-text8 {
-  align-self: stretch;
-  text-align: center;
+
+.thq-icon-medium {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  fill: #09102ce1;
+  display: block; /* Ensure it's treated as a block */
 }
-.contact-text9 {
-  text-align: center;
+
+.contact-content1,
+.contact-content2,
+.contact-content3,
+.contact-content4,
+.contact-content5,
+.contact-content6,
+.contact-content7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the icons and text */
 }
-.contact-address {
-  text-align: center;
-}
-@media(max-width: 767px) {
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
   .contact-row {
     flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .contact-box {
+    max-width: 100%;
   }
 }
-@media(max-width: 479px) {
-  .contact-row {
-    align-items: stretch;
+
+@media screen and (max-width: 768px) {
+  .contact-heading {
+    font-size: 1.8rem;
   }
+
+  .contact-subheading {
+    font-size: 0.9rem;
+  }
+
+  .contact-info-title {
+    font-size: 1rem;
+  }
+}
+
+/* Buttons and Hover Effects */
+.contact-box:hover .contact-info-detail {
+  color: #333;
 }

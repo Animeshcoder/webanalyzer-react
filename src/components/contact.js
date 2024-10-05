@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-import './contact.css'
+import "./contact.css";
 
 const Contact = (props) => {
   return (
@@ -61,20 +61,20 @@ const Contact = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 Contact.defaultProps = {
-  content1: 'Have questions or need assistance? Reach out to us!',
-  content3: 'Feel free to drop us a message or give us a call.',
-  address1: '123 Main Street, City, Country',
-  content4: 'We look forward to hearing from you!',
-  email1: 'info@webanalyzer.com',
-  content5: 'Stay connected with us for the latest updates and news.',
-  phone1: '+911234567890',
-  heading1: 'Contact Us',
-  content2: 'Our team is ready to help you with any inquiries.',
-}
+  content1: "Have questions or need assistance? Reach out to us!",
+  content3: "Feel free to drop us a message or give us a call.",
+  address1: "123 Main Street, City, Country",
+  content4: "We look forward to hearing from you!",
+  email1: "info@webanalyzer.com",
+  content5: "Stay connected with us for the latest updates and news.",
+  phone1: "+911234567890",
+  heading1: "Contact Us",
+  content2: "Our team is ready to help you with any inquiries.",
+};
 
 Contact.propTypes = {
   content1: PropTypes.string,
@@ -86,6 +86,6 @@ Contact.propTypes = {
   phone1: PropTypes.string,
   heading1: PropTypes.string,
   content2: PropTypes.string,
-}
+};
 
-export default Contact
+export default Contact;

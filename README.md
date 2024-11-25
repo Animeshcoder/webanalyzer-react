@@ -25,9 +25,9 @@
 ## Tech Stack  
 
 - **Frontend**: React.js, Bootstrap  
-- **Backend**: Python, Flask  
+- **Backend**: Python, FastAPI
 - **APIs**: Google Search Engine API, custom web scraping scripts  
-- **Deployment**: AWS/GCP  
+- **Deployment**: GCP  
 
 ---
 
